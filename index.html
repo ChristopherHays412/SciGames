@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Director Portal</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="js/users.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div ng-app="app" ng-controller="UserController">
+
+<div id="wrapper">
+<div id="heading">COMPANY DIRECTORY</div>
+
+    <table id="dir-details">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Title</th>
+                <th>Office</th>
+                <th>Revise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{ user.name }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.title }}</td>
+                <td>{{ user.office }}</td>
+                <td> <a href="javascript:void(0)" ng-click="edit(user.id)">Edit</a> | <a href="javascript:void(0)" ng-click="delete(user.id)">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+ <div id="container">
+    <form name="form">    
+    <table id="form-table">
+        <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text" name="name" ng-model="newuser.name" required autofocus/>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><label>Phone:</label></td>
+            <td><input type="text" name="phone" ng-model="newuser.phone" required /><td>
+        </tr>    
+
+        <tr>
+            <td><label>Title:</label></td>
+            <td><input type="text" name="title" ng-model="newuser.title" required /><td>
+        </tr>   
+        
+          <tr>
+            <td><label>Office:</label></td>
+            <td><input type="text" name="office" ng-model="newuser.office" required /><td>
+        </tr>    
+          
+        <tr>
+            <td></td>
+            <td><input ng-disabled="form.$invalid" id="save-btn" type="button" value="Save" ng-click="saveUser()" /></td>
+        </tr>
+    </table>
+    </form>
+</div>
+    
+    
+</div>
+
+</div><!-- #wrapper -->
+</body>
+</html>

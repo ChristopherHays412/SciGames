@@ -1,0 +1,15 @@
+Designer/Developer Notes:
+
+I chose to complete this programming exercise using Angular JS. The reason for that is that I'm very comfortable with Angular and have programmed similar widgets using the framework and for the sake of efficiency and time I thought it would best to stick with what I know.
+
+You'll note in the HTML code that I used tables for the output. In this day and age I'm not a proponent of HTML tables (memories of Microsoft Front Page haunt me as I type that) but in the interest of time and efficiency, considering that the design of the page was not a mitigating factor, I went with something fast.
+
+Also, please know that I did not program the HTML/CSS to accommodate a wealth of new inputs to the directory. Again, this was in the interest of time. If this is something you would like me to set up please let me know and I will take care of it. In the meantime, I gave the main wrapper a fixed height so if a bunch of new data is introduced to the table the design will break.
+
+One other thing: If I was programming this for a client I would have made the input form below the output table a "display: none" and only had it appear if someone hit "Edit" or an "Add New" button which I would have installed. I probably would also given it some slick jQuery intro animation.
+
+I capitalized the titles of Walter Beans and Jeff Greene in the js file. It was bothering me that they weren't capitalized.
+
+Thank you for letting me take a crack at this!
+
+Chris

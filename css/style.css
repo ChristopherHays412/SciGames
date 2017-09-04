@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{		
+	margin: 0;
+   	width: 100%;			
+	background-image: url(../bodyBg.jpg);		
+	background-attachment: fixed;
+    background-position: center center;
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;		
+}
+#wrapper {
+	width: 800px;
+	height: 450px;
+	background-color: rgba(76,101,196,0.6);
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	margin: auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+
+#container{
+	color: white;
+	width: 230px;	
+	font-family: 'Lato', sans-serif;
+	 margin-left:auto; 
+    margin-right:auto;
+	margin-top: 35px;	
+}
+
+#dir-details{
+	width: 750px;
+	text-align: center;
+	border: 2px solid white;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	 margin-left:auto; 
+    margin-right:auto;
+	border-collapse: collapse;
+}
+#save-btn{
+	margin-left: 120px;
+	  filter: none;
+    cursor: pointer;    
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1001;
+    background: #4c65c4;
+    font-size: 14px;
+    line-height: 110%;
+    border: none;
+	color: #fff;
+    padding: 10px;    
+    font-weight: 400;    
+    letter-spacing: 1px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+#save-btn:hover {
+	background: #a2000b;
+	color: #fff;
+}	
+legend{
+	font-weight: bold;
+	font-size: 20px;
+}
+#heading{
+	font-size: 30px;	
+	margin: 15px 0px;
+	font-family: 'Cinzel', serif;
+	color: #fff;	
+}
+th{
+	background-color: #4c65c4;
+	color: #fff;
+	padding: 10px 0px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;	
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#form-table td {
+	border: none;
+}
+
+th:last-child {
+	border-right: none;	
+}
+
+td {
+	padding: 5px;
+	border: 1px solid #fff;
+}
+a{
+	
+	color: white;
+}
+
